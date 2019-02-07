@@ -35,13 +35,13 @@ It's very easy you just need to tape "1" and after the coordinates of the vector
 
 To save the game you just need to press "0" before making a play.
 
-![savegame](https://user-images.githubusercontent.com/34748489/52440634-96c0bf80-2b16-11e9-8eca-25e735858fa2.png)
+![save game](https://user-images.githubusercontent.com/34748489/52442577-6596be00-2b1b-11e9-86dd-cee3ac1f1fde.png)
 
 ## Who wins?
 
 Wins the player that completes more squares, after no more possible plays.
 
-![end game](https://user-images.githubusercontent.com/34748489/52442443-0638ae00-2b1b-11e9-9970-212b2175a27c.png)
+![gameneg](https://user-images.githubusercontent.com/34748489/52442521-41d37800-2b1b-11e9-8a69-008e51e194b2.png)
 
 ## Contribution:
 
