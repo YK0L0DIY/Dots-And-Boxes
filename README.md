@@ -7,7 +7,8 @@ So I developed my terminal version in Python just clone the repository and enjoy
 
 When you run the game you should have this menu:
 
-(imagem)
+![first menu](https://user-images.githubusercontent.com/34748489/52440269-85c37e80-2b15-11e9-9fd5-ff3fa0312319.png)
+
 
 
 Basically if you press "0" the game will Exit, if you press "1" you will have a second menu:
