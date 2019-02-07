@@ -8,6 +8,7 @@ player vs player mode
 """
 import table
 
+
 def start(x, y):
     """
     beginning of the game
@@ -90,7 +91,7 @@ def atualizeTab(tab, play):
     atualization of the table
     :param tab: table
     :param play: the play
-    :return: new table atualizated
+    :return: new table updated
     """
     cord1, cord2 = play
     x, y = cord1
@@ -114,9 +115,9 @@ def atualizeTab(tab, play):
 
 def gameEnd(tab):
     """
-    confirm if are any posibole plays
+    confirm if are any possible plays
     :param tab: table
-    :return: true if is possibol to play
+    :return: true if is possible to play
     """
     for x in tab:
         for y in x:
@@ -127,9 +128,9 @@ def gameEnd(tab):
 
 def sqware(tab, player):
     """
-    creates the sqwares if the exists
+    creates the squares if the exists
     :param tab: table
-    :param player: atual player
+    :param player: actual player
     :return: modified table
     """
     hit = False
@@ -175,7 +176,7 @@ def points(tab):
 
 def resume():
     """
-    resumes the existed game in fali save
+    resumes the existed game in fail save
     """
     saved = open('save', 'r')
     tab = []
@@ -194,9 +195,9 @@ def resume():
 
 def saveGame(tab, player):
     """
-    saves the atual game in file "save"
+    saves the actual game in file "save"
     :param tab: table
-    :param player: atual player
+    :param player: actual player
     :return: just back
     """
     save = open('save', 'r+')
@@ -247,20 +248,21 @@ def play(tab, player="A"):
             tryPlay = gameInput()
             if validate(tab, tryPlay):
                 break
-            print("Jogda invalida")
+            print("Invalid Play")
 
         tab = atualizeTab(tab, tryPlay)
         tab, hit = sqware(tab, player)
 
-        if hit:
-            play(tab, player)
-
         if gameEnd(tab):
             a, b = points(tab)
-            table.print_tabuleiro(tab)
+            table.print_tab(tab)
             print("Game ended. Score is; A-", a, " and B-", b)
 
+            hit = 0
             return
+
+        if hit:
+            play(tab, player)
 
         play(tab, changePlayer(player))
 
@@ -268,4 +270,4 @@ def play(tab, player="A"):
 
 
 if __name__ == "__main__":
-    start(5, 7)
+    start(2, 2)
